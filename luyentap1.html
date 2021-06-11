@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<input type="number" id="hienthi">
+<select id="a">
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
+</select>
+<select id="b">
+    <option  value="1">VND</option>
+    <option  value="23000">USD</option>
+</select>
+<button onclick="nhan()">nhan</button>
+<script>
+    function nhan () {
+        let dl1 = +document.getElementById("hienthi").value;
+        let dl2 = +document.getElementById("a").value;
+        let dl3 = +document.getElementById("b").value;
+        let ketqua = dl1 * (dl2/dl3);
+        alert("ket qua "+ketqua);
+    }
+</script>
 
 </body>
 </html>
